@@ -3,6 +3,7 @@ package za.co.mmagon.jwebswing.plugins.angulartouch;
 import za.co.mmagon.jwebswing.Page;
 import za.co.mmagon.jwebswing.PageConfigurator;
 import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
+import za.co.mmagon.jwebswing.plugins.ComponentInformation;
 import za.co.mmagon.jwebswing.plugins.PluginInformation;
 import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 
@@ -25,15 +26,18 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
         pluginOriginalHomepage = "https://docs.angularjs.org/api/ngTouch",
         pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularTouch.jar/download"
 )
-class AngularTouchConfigurator extends PageConfigurator
+@ComponentInformation(name = "Angular Touch",
+        description = "The ngTouch module provides helpers for touch-enabled devices.",
+        url = "https://docs.angularjs.org/api/ngTouch")
+class AngularTouchPageConfigurator extends PageConfigurator
 {
 
     private static final long serialVersionUID = 1L;
 
     /*
-     * Constructs a new AngularTouchConfigurator
+     * Constructs a new AngularTouchPageConfigurator
      */
-    public AngularTouchConfigurator()
+    public AngularTouchPageConfigurator()
     {
         //Nothing needed
     }

@@ -8,10 +8,10 @@ import za.co.mmagon.jwebswing.Page;
  *
  * @author Marc Magon
  */
-public class AngularTouchConfiguratorTest extends BaseTestClass
+public class AngularTouchPageConfiguratorTest extends BaseTestClass
 {
 
-    public AngularTouchConfiguratorTest()
+    public AngularTouchPageConfiguratorTest()
     {
     }
 
