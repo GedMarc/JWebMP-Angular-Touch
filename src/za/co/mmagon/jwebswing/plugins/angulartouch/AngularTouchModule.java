@@ -10,20 +10,20 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  */
 class AngularTouchModule extends AngularModuleBase
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new AngularTouchModule
-     */
-    public AngularTouchModule()
-    {
-        super("ngTouch");
-    }
-
-    @Override
-    public String renderFunction()
-    {
-        return null;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new AngularTouchModule
+	 */
+	public AngularTouchModule()
+	{
+		super("ngTouch");
+	}
+	
+	@Override
+	public String renderFunction()
+	{
+		return null;
+	}
 }
