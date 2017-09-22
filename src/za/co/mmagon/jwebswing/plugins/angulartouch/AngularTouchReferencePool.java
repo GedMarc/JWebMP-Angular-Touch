@@ -24,19 +24,20 @@ enum AngularTouchReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private AngularTouchReferencePool()
+	AngularTouchReferencePool()
 	{
 	
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private AngularTouchReferencePool(String data)
+	AngularTouchReferencePool(String data)
 	{
-	
+
 	}
 	
-	private AngularTouchReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	AngularTouchReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)
