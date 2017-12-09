@@ -27,11 +27,12 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 )
 @ComponentInformation(name = "Angular Touch",
 		description = "The ngTouch module provides helpers for touch-enabled devices.",
-		url = "https://docs.angularjs.org/api/ngTouch") class AngularTouchPageConfigurator extends PageConfigurator
+		url = "https://docs.angularjs.org/api/ngTouch")
+public class AngularTouchPageConfigurator extends PageConfigurator
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new AngularTouchPageConfigurator
 	 */
@@ -39,7 +40,7 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 	{
 		//Nothing needed
 	}
-	
+
 	@Override
 	public Page configure(Page page)
 	{
