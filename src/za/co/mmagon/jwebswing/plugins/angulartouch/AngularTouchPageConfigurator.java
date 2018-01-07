@@ -46,8 +46,8 @@ public class AngularTouchPageConfigurator extends PageConfigurator
 	{
 		if (!page.isConfigured())
 		{
-			JQueryPageConfigurator.setRequired(page.getBody(), true);
-			AngularPageConfigurator.setRequired(page.getBody(), true);
+			JQueryPageConfigurator.setRequired(true);
+			AngularPageConfigurator.setRequired(true);
 			page.getBody().addJavaScriptReference(AngularTouchReferencePool.AngularTouch.getJavaScriptReference());
 			page.getAngular().getAngularModules().add(new AngularTouchModule());
 		}
