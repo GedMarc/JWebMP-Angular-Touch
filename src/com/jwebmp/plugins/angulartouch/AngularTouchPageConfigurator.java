@@ -1,11 +1,11 @@
-package za.co.mmagon.jwebswing.plugins.angulartouch;
+package com.jwebmp.plugins.angulartouch;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
-import za.co.mmagon.jwebswing.plugins.ComponentInformation;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.base.angular.AngularPageConfigurator;
+import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -23,12 +23,12 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://docs.angularjs.org/api/ngTouch",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularTouch.jar/download"
-)
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularTouch.jar/download")
 @ComponentInformation(name = "Angular Touch",
 		description = "The ngTouch module provides helpers for touch-enabled devices.",
 		url = "https://docs.angularjs.org/api/ngTouch")
-public class AngularTouchPageConfigurator extends PageConfigurator
+public class AngularTouchPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -48,8 +48,11 @@ public class AngularTouchPageConfigurator extends PageConfigurator
 		{
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
-			page.getBody().addJavaScriptReference(AngularTouchReferencePool.AngularTouch.getJavaScriptReference());
-			page.getAngular().getAngularModules().add(new AngularTouchModule());
+			page.getBody()
+			    .addJavaScriptReference(AngularTouchReferencePool.AngularTouch.getJavaScriptReference());
+			page.getAngular()
+			    .getAngularModules()
+			    .add(new AngularTouchModule());
 		}
 		return page;
 	}

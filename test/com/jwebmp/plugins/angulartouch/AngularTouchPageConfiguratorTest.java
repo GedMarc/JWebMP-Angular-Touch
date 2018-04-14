@@ -1,13 +1,14 @@
-package za.co.mmagon.jwebswing.plugins.angulartouch;
+package com.jwebmp.plugins.angulartouch;
 
+import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
-import za.co.mmagon.jwebswing.BaseTestClass;
-import za.co.mmagon.jwebswing.Page;
 
 /**
  * @author Marc Magon
  */
-public class AngularTouchPageConfiguratorTest extends BaseTestClass
+public class AngularTouchPageConfiguratorTest
+		extends BaseTestClass
 {
 
 	public AngularTouchPageConfiguratorTest()
