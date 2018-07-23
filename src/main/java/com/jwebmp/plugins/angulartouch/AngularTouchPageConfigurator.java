@@ -1,11 +1,11 @@
 package com.jwebmp.plugins.angulartouch;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -28,11 +28,8 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		description = "The ngTouch module provides helpers for touch-enabled devices.",
 		url = "https://docs.angularjs.org/api/ngTouch")
 public class AngularTouchPageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new AngularTouchPageConfigurator
 	 */
@@ -50,9 +47,6 @@ public class AngularTouchPageConfigurator
 			AngularPageConfigurator.setRequired(true);
 			page.getBody()
 			    .addJavaScriptReference(AngularTouchReferencePool.AngularTouch.getJavaScriptReference());
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new AngularTouchModule());
 		}
 		return page;
 	}
