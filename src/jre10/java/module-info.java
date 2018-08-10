@@ -7,6 +7,7 @@ module com.jwebmp.plugins.angulartouch {
 	exports com.jwebmp.plugins.angulartouch;
 
 	requires com.jwebmp.core;
+	requires java.validation;
 	provides IPageConfigurator with AngularTouchPageConfigurator;
 	provides IAngularModule with AngularTouchModule;
 
