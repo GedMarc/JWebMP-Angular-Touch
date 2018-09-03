@@ -32,12 +32,42 @@ import javax.validation.constraints.NotNull;
 public class AngularTouchPageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
 	/*
 	 * Constructs a new AngularTouchPageConfigurator
 	 */
 	public AngularTouchPageConfigurator()
 	{
 		//Nothing needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return AngularTouchPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		AngularTouchPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -52,5 +82,11 @@ public class AngularTouchPageConfigurator
 			    .addJavaScriptReference(AngularTouchReferencePool.AngularTouch.getJavaScriptReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return AngularTouchPageConfigurator.enabled;
 	}
 }
