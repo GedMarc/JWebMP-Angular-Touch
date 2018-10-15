@@ -20,8 +20,8 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,touch, ui,web ui, framework",
 		pluginSubtitle = "The ngTouch module provides helpers for touch-enabled devices.",
 		pluginSourceUrl = "https://docs.angularjs.org/api/ngTouch",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-Touch/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-Touch",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-Touch/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-Touch",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://docs.angularjs.org/api/ngTouch",
@@ -30,7 +30,7 @@ import javax.validation.constraints.NotNull;
 		description = "The ngTouch module provides helpers for touch-enabled devices.",
 		url = "https://docs.angularjs.org/api/ngTouch")
 public class AngularTouchPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularTouchPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
