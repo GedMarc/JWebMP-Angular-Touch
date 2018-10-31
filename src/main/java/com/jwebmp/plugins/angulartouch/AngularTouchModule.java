@@ -31,7 +31,6 @@ public class AngularTouchModule
 		implements IAngularModule<AngularTouchModule>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularTouchModule
