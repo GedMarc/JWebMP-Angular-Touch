@@ -12,6 +12,7 @@ module com.jwebmp.plugins.angulartouch {
 	requires com.jwebmp.core;
 	requires java.validation;
 	requires com.jwebmp.guicedinjection;
+	requires com.jwebmp.core.angularjs;
 
 	provides IPageConfigurator with AngularTouchPageConfigurator;
 	provides IAngularModule with AngularTouchModule;
