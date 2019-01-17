@@ -10,7 +10,7 @@ import com.jwebmp.core.services.IPageConfigurator;
 import javax.validation.constraints.NotNull;
 
 /**
- * @author Marc Magon
+ * @author GedMarc
  * @since 08 Jun 2017
  */
 @PluginInformation(pluginName = "Angular Touch",
