@@ -1,11 +1,3 @@
-import com.jwebmp.core.base.angular.services.IAngularModule;
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.angulartouch.AngularTouchModule;
-import com.jwebmp.plugins.angulartouch.AngularTouchPageConfigurator;
-import com.jwebmp.plugins.angulartouch.implementations.AngularTouchExclusionsModule;
-
 module com.jwebmp.plugins.angulartouch {
 	exports com.jwebmp.plugins.angulartouch;
 
@@ -14,10 +6,10 @@ module com.jwebmp.plugins.angulartouch {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides IPageConfigurator with AngularTouchPageConfigurator;
-	provides IAngularModule with AngularTouchModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angulartouch.AngularTouchPageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angulartouch.AngularTouchModule;
 
-	provides IGuiceScanModuleExclusions with AngularTouchExclusionsModule;
-	provides IGuiceScanJarExclusions with AngularTouchExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angulartouch.implementations.AngularTouchExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angulartouch.implementations.AngularTouchExclusionsModule;
 
 }
