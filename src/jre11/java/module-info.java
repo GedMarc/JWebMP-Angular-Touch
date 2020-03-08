@@ -10,6 +10,5 @@ module com.jwebmp.plugins.angulartouch {
 	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angulartouch.AngularTouchModule;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angulartouch.implementations.AngularTouchExclusionsModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angulartouch.implementations.AngularTouchExclusionsModule;
 
 }
