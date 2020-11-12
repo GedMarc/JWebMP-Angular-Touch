@@ -2,7 +2,7 @@ module com.jwebmp.plugins.angulartouch {
 	exports com.jwebmp.plugins.angulartouch;
 
 	requires com.jwebmp.core;
-	requires java.validation;
+	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
