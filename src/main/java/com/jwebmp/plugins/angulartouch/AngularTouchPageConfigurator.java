@@ -4,6 +4,7 @@ import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -16,7 +17,7 @@ import jakarta.validation.constraints.NotNull;
 @PluginInformation(pluginName = "Angular Touch",
 		pluginDescription = "The ngTouch module provides helpers for touch-enabled devices. The implementation is based on jQuery Mobile touch event handling ",
 		pluginUniqueName = "jwebswing-angular-touch",
-		pluginVersion = "1.6.4",
+		pluginVersion = "1.8.2",
 		pluginCategories = "angular,touch, ui,web ui, framework",
 		pluginSubtitle = "The ngTouch module provides helpers for touch-enabled devices.",
 		pluginSourceUrl = "https://docs.angularjs.org/api/ngTouch",
@@ -25,7 +26,12 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://docs.angularjs.org/api/ngTouch",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularTouch.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.angular/jwebmp-angular-touch",
+		pluginGroupId = "com.jwebmp.plugins.angular",
+		pluginArtifactId = "jwebmp-angular-touch",
+		pluginModuleName = "com.jwebmp.plugins.angulartouch",
+		pluginStatus = PluginStatus.Released
+)
 @ComponentInformation(name = "Angular Touch",
 		description = "The ngTouch module provides helpers for touch-enabled devices.",
 		url = "https://docs.angularjs.org/api/ngTouch")

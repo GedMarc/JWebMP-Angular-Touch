@@ -31,7 +31,7 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
 enum AngularTouchReferencePool
 		implements ReferencePool
 {
-	AngularTouch(new JavascriptReference("AngularTouch", 1.6, "bower_components/angular-touch/angular-touch.js"), null);
+	AngularTouch(new JavascriptReference("AngularTouch", 1.82, "bower_components/angular-touch/angular-touch.js"), null);
 	/**
 	 * Any sub data
 	 */
