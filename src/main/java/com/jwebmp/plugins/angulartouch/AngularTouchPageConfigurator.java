@@ -14,9 +14,9 @@ import jakarta.validation.constraints.NotNull;
  * @author GedMarc
  * @since 08 Jun 2017
  */
-@PluginInformation(pluginName = "Angular Touch",
+@PluginInformation(pluginName = "Touch",
 		pluginDescription = "The ngTouch module provides helpers for touch-enabled devices. The implementation is based on jQuery Mobile touch event handling ",
-		pluginUniqueName = "jwebswing-angular-touch",
+		pluginUniqueName = "angular-touch",
 		pluginVersion = "1.8.2",
 		pluginCategories = "angular,touch, ui,web ui, framework",
 		pluginSubtitle = "The ngTouch module provides helpers for touch-enabled devices.",
