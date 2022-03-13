@@ -82,8 +82,8 @@ public class AngularTouchPageConfigurator
 	{
 		if (!page.isConfigured() && enabled())
 		{
-			JQueryPageConfigurator.setRequired(true);
-			AngularPageConfigurator.setRequired(true);
+			
+			
 			page.getBody()
 			    .addJavaScriptReference(AngularTouchReferencePool.AngularTouch.getJavaScriptReference());
 		}
